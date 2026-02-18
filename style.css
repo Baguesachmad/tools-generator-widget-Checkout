@@ -1,0 +1,21 @@
+body {
+  font-family:sans-serif;
+  padding:20px;
+  background:#f4f4f4;
+}
+.container {
+  max-width:700px;
+  margin:auto;
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+label {display:block; margin:10px 0 5px;}
+input {width:100%; padding:8px; margin-bottom:10px; border-radius:5px; border:1px solid #ccc;}
+button {padding:10px 15px; border:none; border-radius:5px; cursor:pointer; margin-top:10px;}
+button.copy-btn {background:#4CAF50; color:white;}
+pre {background:#eee; padding:10px; border-radius:5px; overflow-x:auto;}
+#cart-widget {border:1px solid #ccc; padding:15px; width:100%; max-width:400px; border-radius:10px; font-family:sans-serif;}
+#cart-widget button {padding:8px 15px; border:none; border-radius:5px; cursor:pointer;}
+#cart-items {list-style:none; padding:0; margin:0 0 10px 0;}
