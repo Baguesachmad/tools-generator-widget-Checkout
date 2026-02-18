@@ -84,27 +84,3 @@ document.addEventListener('click',function(e){
     w.document.write(html);
   }
 });
-
-// Generate Code
-document.getElementById('generateBtn').addEventListener('click',function(){
-  const blogName = document.getElementById('blogName').value || 'Nama Blog';
-  const blogLink = document.getElementById('blogLink').value || 'https://example.com';
-  // HTML
-  const htmlCode=`<div id="cart-widget">
-  <h3>Keranjang ${blogName}</h3>
-  <ul id="cart-items"></ul>
-  <strong>Total: Rp <span id="cart-total">0</span></strong>
-  <br><br>
-  <button id="checkout-btn">Checkout via Bank Transfer</button>
-</div>`;
-  // CSS
-  const cssCode=`#cart-widget {border:1px solid #ccc;padding:15px;width:300px;border-radius:10px;font-family:sans-serif;}
-#cart-widget button {padding:8px 15px;border:none;border-radius:5px;cursor:pointer;}
-#cart-items {list-style:none;padding:0;margin:0 0 10px 0;}`;
-  // JS
-  const jsCode=`${document.getElementById('widget-js').innerText || ''} // bisa diganti sesuai widget.js`;
-  
-  document.getElementById('htmlCode').innerText=htmlCode;
-  document.getElementById('cssCode').innerText=cssCode;
-  document.getElementById('jsCode').innerText=jsCode;
-});
